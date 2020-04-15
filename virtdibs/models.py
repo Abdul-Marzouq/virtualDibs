@@ -5,6 +5,7 @@ class Customer(models.Model):
     name = models.CharField(max_length=50)
     username = models.CharField(max_length=15)
     password = models.CharField(max_length=30)
+    email_id = models.EmailField()
     DOB = models.DateField()
     dispatch_address_id = models.IntegerField()
     delivery_address_id = models.IntegerField()
