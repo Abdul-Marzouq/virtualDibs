@@ -32,12 +32,14 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'django.contrib.admin',
+    'virtdibs',
+    'widget_tweaks',
+    'user_accounts',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'virtdibs',
 ]
 
 MIDDLEWARE = [
@@ -118,4 +120,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/user_accounts/static/'
+
+LOGIN_URL = '/customer_login/'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
