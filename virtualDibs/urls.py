@@ -15,11 +15,18 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-
+from django.contrib.auth import views as auth_views
+from user_accounts import views as user_accounts_views
 from virtdibs import views
+from django.conf.urls import include
+
 
 urlpatterns = [
     url(r'^$',views.index,name='index'),
-    url(r'^login_signup/$',views.signupin,name='signupin'),
+    url(r'^register/$',user_accounts_views.register,name='register'),
+    url(r'^customer_login/',user_accounts_views.customer_login,name='customer_login'),
+    url(r'^logout/$', user_accounts_views.user_logout, name='logout'),
+    url(r'^password_reset_email/', user_accounts_views.password_reset_email, name='password_reset_email'),
     url(r'^admin/',admin.site.urls),
+    url('^',include('django.contrib.auth.urls')),
 ]
