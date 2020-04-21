@@ -1,45 +1,6 @@
 <!-- virtual dibs sale initiation portal v1.0 ~Aslam -->
-<!DOCTYPE html>
-	<meta charset="utf-8">
-  <head>
-
-  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <meta charset="utf-8">
-    <title>Start a bid</title>
-
-
-  </head>
-
-  <body>
-  	<h1 class="okay"></h1>
-
-    <nav class="navbar navbar-expand-md fixed-top " style="background-color: #e3f2fd;">
-
-      <a class="navbar-brand" href="#">VirtualDibs</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-	  </button>
-
-	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	     <ul class="navbar-nav mr-auto">
-	       <li class="nav-item">
-	           <a class="nav-link" href="home.html">Sign Out</a> <!-- Include signout script -->
-	       </li>
-
-	       <li class="nav-item">
-	         <a class="nav-link" href="https://www.psoda.com/global/wp-content/uploads/2017/03/Weird-projects.png">Surprise Me</a>
-	       </li>
-
-	     </ul>
-	     <form class="form-inline my-2 my-lg-0">
-       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-     </form>
-	 </div>
-	</nav>
+{% extends 'virtdibs/base.html' %}
+{% block body_block %}
 
 	<div class="jumbotron" style="padding-bottom: 15px">
       <h1>Start a bid</h1>
@@ -172,5 +133,4 @@
 	<br>
 	<br>
 	<br>
-	<br>
-</body>
+{% endblock %}
