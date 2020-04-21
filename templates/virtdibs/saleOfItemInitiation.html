@@ -1,0 +1,176 @@
+<!-- virtual dibs sale initiation portal v1.0 ~Aslam -->
+<!DOCTYPE html>
+	<meta charset="utf-8">
+  <head>
+
+  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <meta charset="utf-8">
+    <title>Start a bid</title>
+
+
+  </head>
+
+  <body>
+  	<h1 class="okay"></h1>
+
+    <nav class="navbar navbar-expand-md fixed-top " style="background-color: #e3f2fd;">
+
+      <a class="navbar-brand" href="#">VirtualDibs</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	     <ul class="navbar-nav mr-auto">
+	       <li class="nav-item">
+	           <a class="nav-link" href="home.html">Sign Out</a> <!-- Include signout script -->
+	       </li>
+
+	       <li class="nav-item">
+	         <a class="nav-link" href="https://www.psoda.com/global/wp-content/uploads/2017/03/Weird-projects.png">Surprise Me</a>
+	       </li>
+
+	     </ul>
+	     <form class="form-inline my-2 my-lg-0">
+       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+     </form>
+	 </div>
+	</nav>
+
+	<div class="jumbotron" style="padding-bottom: 15px">
+      <h1>Start a bid</h1>
+      <p>Enter details of the item to be auctioned </p>
+      <!-- <p><a class="btn btn-primary btn-md"
+        role="button" name="button">Learn more></a></p> -->
+  </div>
+
+  <style left-padding="20px"></style>
+  <div class="container">
+ 		<div class="col-lg-3"></div>
+  	<div class="col-lg-8" style="margin-top: 90px; margin-left: 100px">
+	   	<form >
+	  	  <div  class="form-group align-items-center">
+		    	<label for="itemName1">Name of the item</label>
+		    	<input type="name" class="form-control" id="itemName1" aria-describedby="emailHelp" placeholder="Enter item name">
+		    	<small id="emailHelp" class="form-text text-muted">This will be visible to potential bidders.</small>
+		  	</div>
+			  <div class="form-group">
+			    <label for="inputEmail1">Email address</label>
+			    <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+			    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+			  </div>
+
+		  <!-- <div class="custom-file">
+		    <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+		    <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+		    <small id="fileHelp" class="form-text text-muted">Upload picture(s) of the item.</small>
+		    <div class="invalid-feedback">Example invalid custom file feedback</div>
+		  </div> -->
+		  	Upload picture(s) of the item.
+		  	<div class="card" style="padding: 8px">
+			  	<label for="uploadPic0">Upload main picture.</label>
+    			<input type="file" class="form-control-file" id="uploadPic0">
+		    </div>
+			  <div class="container">	
+			  	<div class="row">
+		 	  	  <div class="card col-4" style="padding: 8px">
+			  			<label for="uploadPic1">Upload picture.</label>
+    					<input type="file" class="form-control-file" id="uploadPic1">
+		        </div>
+		        <div class="card col-4" style="padding: 8px">
+			  			<label for="uploadPic2">Upload picture.</label>
+    					<input type="file" class="form-control-file" id="uploadPic2">
+		        </div>
+		        <div class="card col-4" style="padding: 8px">
+			  			<label for="uploadPic3">Upload picture.</label>
+    					<input type="file" class="form-control-file" id="uploadPic3">
+		        </div>
+		    	</div>
+		    	<div class="row">
+		 	  	  <div class="card col-4" style="padding: 8px">
+			  			<label for="uploadPic4">Upload picture.</label>
+    					<input type="file" class="form-control-file" id="uploadPic4">
+		        </div>
+		        <div class="card col-4" style="padding: 8px">
+			  			<label for="uploadPic5">Upload picture.</label>
+    					<input type="file" class="form-control-file" id="uploadPic5">
+		        </div>
+		        <div class="card col-4" style="padding: 8px">
+			  			<label for="uploadPic6">Upload picture.</label>
+    					<input type="file" class="form-control-file" id="uploadPic6">
+		        </div>
+		    	</div>
+		    </div>
+
+			  <div class="form-group" style="margin-top: 10px">
+			    <label for="inputPassword1">Password</label>
+			    <input type="password" class="form-control" id="inputPassword1" placeholder="Password">
+			  </div>
+
+			  <div  class="form-group align-items-center">
+		    	<label for="description1">Description of item.</label>
+		    	<input type="name" class="form-control" id="description1" aria-describedby="emailHelp" placeholder="500 characters or less" maxlength="500">
+		    	<small id="emailHelp" class="form-text text-muted">Make it catchy.</small>
+		  	</div>
+
+			  <div  class="form-group align-items-center">
+		    	<label for="originalPrice1">Original price of item</label>
+		    	<input type="name" class="form-control" id="originalPrice1" aria-describedby="emailHelp" placeholder="Original price">
+		    	<small id="emailHelp" class="form-text text-muted">This will be visible to potential bidders.</small>
+		  	</div>
+
+		  	<div  class="form-group align-items-center">
+		    	<label for="startingPrice1">Starting bid price</label>
+		    	<input type="name" class="form-control" id="startingPrice1" aria-describedby="startingBidHelp" placeholder="Price to start bid at">
+		    	<small id="startingBidHelp" class="form-text text-muted">Must be < = half of original price.</small>
+		  	</div>
+		  	<div class="form-row">
+			  	<div  class="col-md-6">
+			    	<label for="bidStartDate1">Bid start date</label>
+			    	<input type="date" class="form-control" id="bidStartDate1" aria-describedby="bidStartDateHelp" placeholder="Date of auction">
+			    	<!-- <small id="bidStartDateHelp" class="form-text text-muted">Must be < = half of original price.</small> -->
+			  	</div>
+
+			  	<div  class="col-md-6">
+			    	<label for="bidStartTime1">Bid start time</label>
+			    	<input type="time" class="form-control" id="bidStartTime1" aria-describedby="bidStartTimeHelp" placeholder="Time of auction">
+			    	<!-- <small id="bidStartDateHelp" class="form-text text-muted">Must be < = half of original price.</small> -->
+			  	</div>
+		  	</div>
+		  	<br>
+		  	<div class="form-row">
+			  	<div  class="col-md-6">
+			    	<label for="bidEndDate1">Bid end date</label>
+			    	<input type="date" class="form-control" id="bidEndDate1" aria-describedby="bidEndDateHelp" placeholder="Date of close">
+			    	<!-- <small id="bidStartDateHelp" class="form-text text-muted">Must be < = half of original price.</small> -->
+			  	</div>
+
+			  	<div  class="col-md-6">
+			    	<label for="bidEndTime1">Bid end time</label>
+			    	<input type="time" class="form-control" id="bidEndTime1" aria-describedby="bidEndTimeHelp" placeholder="Time of close">
+			    	<!-- <small id="bidStartDateHelp" class="form-text text-muted">Must be < = half of original price.</small> -->
+			  	</div>
+		  	</div>
+		  <!-- <div class="form-group form-check">
+		    <input type="checkbox" class="form-check-input" id="check1">
+		    <label class="form-check-label" for="check1">Check me out</label>
+		  </div>  -->
+		  	<br>
+		  	<button type="submit" class="btn btn-primary">Submit</button>
+		 </form>
+		</div>
+		<div class = 'col-lg-1'></div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+</body>
