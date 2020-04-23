@@ -13,9 +13,12 @@
                         <div class="form-group">
                             <input type="password" class="form-control" name="password" placeholder="Password *" value="" />
                         </div>
-                        <div class="form-group">
+                         <div class="form-group">
                             <input type="submit" class="btnSubmit" value="Login" />
                         </div>
+                        <div class="form-group">  <!---fix this i just added href for testing purpose -->
+                           <button type="button" name="button"class="okay" value="dash" href="{% url 'dash' %}">dash</button>
+                       </div>
                         <div class="form-group">
                             <a class="ForgetPwd" href="{% url 'password_reset' %}">Forget Password?</a>
                         </div>

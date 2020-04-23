@@ -23,6 +23,7 @@ from django.conf.urls import include
 
 urlpatterns = [
     url(r'^$',views.index,name='index'),
+    url(r'^dash/$',views.dash,name='dash'),
     url(r'^register/$',user_accounts_views.register,name='register'),
     url(r'^customer_login/',user_accounts_views.customer_login,name='customer_login'),
     url(r'^logout/$', user_accounts_views.user_logout, name='logout'),
