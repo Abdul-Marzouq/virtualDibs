@@ -6,6 +6,6 @@ def home(request):
 
 def index(request):
     return render(request,'virtdibs/index.html')
-    
+
 def dash(request):
     return render(request,'virtdibs/dash.html')

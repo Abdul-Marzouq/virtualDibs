@@ -3,7 +3,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponseRedirect, HttpResponse
 from django.contrib import messages
-from .forms import CustomerSignUpForm, UserSignUpForm
+from .forms import CustomerSignUpForm, UserSignUpForm,AddressForm
 from django.urls import reverse
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
@@ -37,7 +37,7 @@ def register(request):
             customer.save()
             registered = True
         else:
-            print(user_form.errors,customer_form.errors)
+            print(user_form.errors,customer_form.errors,)
     else:
         user_form = UserSignUpForm()
         customer_form = CustomerSignUpForm()

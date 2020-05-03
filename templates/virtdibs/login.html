@@ -10,17 +10,20 @@
                         <div class="form-group">
                             <input type="text" class="form-control" name="username" placeholder="Username *" value=""/>
                         </div>
+                        <br>
                         <div class="form-group">
                             <input type="password" class="form-control" name="password" placeholder="Password *" value="" />
                         </div>
+                        <br>
                          <div class="form-group">
-                            <input type="submit" class="btnSubmit" value="Login" />
+                              <button class="btn btn-outline-primary my-2 my-sm-0 " type="submit" value="Login">Login</button>
                         </div>
-                        <div class="form-group">  <!---fix this i just added href for testing purpose -->
-                           <button type="button" name="button"class="okay" value="dash" href="{% url 'dash' %}">dash</button>
-                       </div>
+                        <br><br>
                         <div class="form-group">
                             <a class="ForgetPwd" href="{% url 'password_reset' %}">Forget Password?</a>
+                        </div>
+                        <div class="form-group">
+                            New to virtualDibs? <a class="ForgetPwd" href="{% url 'register' %}">Click here to register!</a>
                         </div>
                     </form>
                 </div>
